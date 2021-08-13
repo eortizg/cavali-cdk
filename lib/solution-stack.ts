@@ -10,7 +10,7 @@ export class SolutionStack extends cdk.Stack {
 
   constructor(scope: cdk.Construct, id: string, props: cdk.StackProps, buildConfig : BuildConfig) {
     super(scope, id, props);
-    const clientName = buildConfig.Parameters.ClienteName;
+    const clientName = buildConfig.Parameters.ClientName;
     /** Create VPC for solution */
     const vpcPreffixName = `${clientName}-${buildConfig.Environment}-vpc`;
     const privateSubnetGroupName = `${clientName}-${buildConfig.Environment}-private-subnet`;

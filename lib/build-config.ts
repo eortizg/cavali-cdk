@@ -13,7 +13,7 @@ export interface BuildConfig
 }
 
 export interface BuildParameters{
-    readonly ClienteName: string;
+    readonly ClientName: string;
     readonly DomainClientFrontEnd: string;
     readonly EcrArnClientFrontEnd: string;
     readonly DomainBackofficeFrontEnd: string;

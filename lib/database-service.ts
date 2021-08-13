@@ -22,7 +22,7 @@ export class DatabaseService extends Construct  {
     constructor(scope: Construct, id : string, props: DatabaseServiceProps, buildConfig : BuildConfig) {
         super(scope, id);
 
-        const clientName = buildConfig.Parameters.ClienteName;
+        const clientName = buildConfig.Parameters.ClientName;
         const secretName = `${clientName}-${buildConfig.Environment}-aurora-credentials`;
         const ssmParameterName = `${clientName}-${buildConfig.Environment}-aurora-credentials-arn`; 
         

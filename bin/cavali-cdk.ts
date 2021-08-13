@@ -33,7 +33,7 @@ function getConfig(){
       Build: ensureString(unparsedEnv, "Build"),
 
       Parameters: {
-        ClienteName: ensureString(unparsedEnv["BuildParameters"], "ClientName"),
+        ClientName: ensureString(unparsedEnv["BuildParameters"], "ClientName"),
         DomainBackofficeFrontEnd: ensureString(unparsedEnv["BuildParameters"], "DomainBackofficeFrontEnd"),
         EcrArnClientFrontEnd: ensureString(unparsedEnv["BuildParameters"], "EcrArnClientFrontEnd"),
         DomainClientFrontEnd: ensureString(unparsedEnv["BuildParameters"], "DomainClientFrontEnd"),

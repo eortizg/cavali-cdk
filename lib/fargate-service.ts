@@ -26,7 +26,7 @@ export class FargateService extends Construct  {
     constructor(scope: Construct, id : string, props: FargateServiceProps, buildConfig : BuildConfig) {
         super(scope, id);
 
-        const clientName = buildConfig.Parameters.ClienteName;
+        const clientName = buildConfig.Parameters.ClientName;
 
         const clientPrefix = `${clientName}-${buildConfig.Environment}-server`;
 
