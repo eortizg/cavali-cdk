@@ -22,7 +22,7 @@ export class VpcService extends Construct  {
     constructor(scope: Construct, id : string, props: DatabaseServiceProps, buildConfig : BuildConfig) {
         super(scope, id);
 
-        const clientName = buildConfig.Parameters.ClienteName;
+        const clientName = buildConfig.Parameters.ClientName;
        /*const vpcPreffix = `${clientName}-${buildConfig.Environment}-vpc`;
         const privateSubnetName = `${clientName}-${buildConfig.Environment}-private-subnet`
         const publicSubnetName = `${clientName}-${buildConfig.Environment}-public-subnet`*/

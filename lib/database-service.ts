@@ -84,7 +84,7 @@ export class DatabaseService extends Construct  {
         const subnetGroup = new rds.SubnetGroup(this, "subnetGroup", {
             description: `Subnetgroup for serverless mysql aurora serverless database`,
             vpc: vpc,
-            subnetGroupName: props.publicSubnetGroupName
+            subnetGroupName: props.privateSubnetGroupName
         })
 
         const cluster = new rds.ServerlessCluster(this, 'AuroraSolutionCluster', {
