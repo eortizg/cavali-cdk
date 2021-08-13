@@ -1,16 +1,17 @@
-import { CfnOutput, Construct } from "@aws-cdk/core";
+import { CfnOutput, Construct, StackProps} from "@aws-cdk/core";
 import * as cognito from "@aws-cdk/aws-cognito";
-import CognitoAuthRole from "./CognitoAuthRole";
+import CognitoAuthRole from "./cognito-auth-role";
 import * as iam from "@aws-cdk/aws-iam";
 
 
 export class CognitoService extends Construct {
-  constructor(scope: Construct, id : string, props?: any) {
+  constructor(scope: Construct, id : string, props? : any) {
     super(scope, id);
 
     const { bucketArn } = props;
 
-    //const app = this.node.root;
+    const app = this.node.root;
+
 
     const userPool = new cognito.UserPool(this, "UserPool", {
       selfSignUpEnabled: true, // Allow users to sign up
@@ -59,9 +60,10 @@ export class CognitoService extends Construct {
     new CfnOutput(this, "IdentityPoolId", {
       value: identityPool.ref,
     });
-    new CfnOutput(this, "AuthenticatedRoleName", {
-      value: authenticatedRole.role.roleName
-    });
-    
+    /*new CfnOutput(this, "AuthenticatedRoleName", {
+      value: authenticatedRole.role.roleName,
+      exportName: app.logicalPrefixedName("CognitoAuthRole"),
+    });*/
+  
   }
 }

@@ -12,6 +12,64 @@
     "@aws-cdk/aws-ecs-patterns:removeDefaultDesiredCount": true,
     "@aws-cdk/aws-rds:lowercaseDbIdentifier": true,
     "@aws-cdk/aws-efs:defaultEncryptionAtRest": true,
-    "@aws-cdk/aws-lambda:recognizeVersionProps": true
+    "@aws-cdk/aws-lambda:recognizeVersionProps": true,
+
+    "dev": {
+      "AWSAccountID": "100621379454",
+      "AWSProfileName": "eortiz",
+      "AWSProfileRegion": "us-east-1",
+
+      "App": "cavali-app",
+      "Environment": "dev",
+      "Version": "0.0.0",
+      "Build": "0",
+
+      "BuildParameters": {
+        "DBUserName": "cavaliadmin",
+        "ClientName": "cavali",
+        "DomainClientFrontEnd": "testnextjs.canvia-aws.es",
+        "EcrArnClientFrontEnd": "arn:aws:ecr:us-east-1:100621379454:repository/cavali-dev-client-frontend-repository",
+        "DomainBackofficeFrontEnd": "backoffice.canvia-aws.es",
+        "EcrArnBackofficeFrontEnd": "arn:aws:ecr:us-east-1:100621379454:repository/cavali-dev-backoffice-repository"
+      }
+    },
+    "qa": {
+      "AWSAccountID": "100621379454",
+      "AWSProfileName": "eortiz",
+      "AWSProfileRegion": "us-east-1",
+
+      "App": "cavali-app",
+      "Environment": "qa",
+      "Version": "0.0.0",
+      "Build": "0",
+
+      "BuildParameters": {
+        "DBUserName": "cavaliadmin",
+        "ClientName": "cavali",
+        "DomainClientFrontEnd": "testnextjs.canvia-aws.es",
+        "EcrArnClientFrontEnd": "arn:aws:ecr:us-east-1:100621379454:repository/cavali-dev-client-frontend-repository",
+        "DomainBackofficeFrontEnd": "backoffice.canvia-aws.es",
+        "EcrArnBackofficeFrontEnd": "arn:aws:ecr:us-east-1:100621379454:repository/cavali-dev-backoffice-repository"
+      }
+    },
+    "prod": {
+      "AWSAccountID": "100621379454",
+      "AWSProfileName": "eortiz",
+      "AWSProfileRegion": "us-east-1",
+
+      "App": "cavali-app",
+      "Environment": "prod",
+      "Version": "0.0.0",
+      "Build": "0",
+
+      "BuildParameters": {
+        "DBUserName": "cavaliadmin",
+        "ClientName": "cavali",
+        "DomainClientFrontEnd": "testnextjs.canvia-aws.es",
+        "EcrArnClientFrontEnd": "arn:aws:ecr:us-east-1:100621379454:repository/cavali-dev-client-frontend-repository",
+        "DomainBackofficeFrontEnd": "backoffice.canvia-aws.es",
+        "EcrArnBackofficeFrontEnd": "arn:aws:ecr:us-east-1:100621379454:repository/cavali-dev-backoffice-repository"
+      }
+    }
   }
 }

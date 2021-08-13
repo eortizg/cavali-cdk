@@ -1,0 +1,18 @@
+{
+  "availability-zones:account=100621379454:region=us-east-1": [
+    "us-east-1a",
+    "us-east-1b",
+    "us-east-1c",
+    "us-east-1d",
+    "us-east-1e",
+    "us-east-1f"
+  ],
+  "hosted-zone:account=100621379454:domainName=testnextjs.canvia-aws.es:region=us-east-1": {
+    "Id": "/hostedzone/Z00819653DWZOZYL2HWY2",
+    "Name": "testnextjs.canvia-aws.es."
+  },
+  "hosted-zone:account=100621379454:domainName=backoffice.canvia-aws.es:region=us-east-1": {
+    "Id": "/hostedzone/Z06048602LMMAG5QPQ682",
+    "Name": "backoffice.canvia-aws.es."
+  }
+}
